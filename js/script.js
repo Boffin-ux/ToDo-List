@@ -38,7 +38,6 @@ const render = () => {
       const todoRemove = li.querySelector('.todo-remove');
       todoRemove.addEventListener('click', event => {
          todoData.splice(index, 1);
-         console.log(todoData);
          render();
       });
       localStorage.todoData = JSON.stringify(todoData);
