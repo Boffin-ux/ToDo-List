@@ -58,5 +58,7 @@ todoControl.addEventListener('submit', event => {
       headerInput.value = '';
    }
 });
-todoData = JSON.parse(localStorage.todoData);
+if (todoData) {
+   todoData = JSON.parse(localStorage.todoData);
+}
 render();
